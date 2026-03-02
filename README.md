@@ -92,13 +92,21 @@ Strong success criteria let the LLM loop independently. Weak criteria ("make it 
 
 ## Install
 
-**Option A: Skills CLI (recommended)**
+**Option A: Claude Code Plugin (recommended)**
 
-```bash
-npx skills add forrestchang/andrej-karpathy-skills
+From within Claude Code, first add the marketplace:
+```
+/plugin marketplace add forrestchang/andrej-karpathy-skills
 ```
 
-**Option B: CLAUDE.md**
+Then install the plugin:
+```
+/plugin install andrej-karpathy-skills@karpathy-skills
+```
+
+This installs the guidelines as a Claude Code plugin, making the skill available across all your projects.
+
+**Option B: CLAUDE.md (per-project)**
 
 New project:
 ```bash
